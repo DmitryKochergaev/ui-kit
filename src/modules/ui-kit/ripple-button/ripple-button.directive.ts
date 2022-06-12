@@ -6,7 +6,6 @@ import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 export class RippleButtonDirective {
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
-    console.log('el', el);
   }
 
   @HostListener('click', ['$event'])
