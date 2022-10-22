@@ -13,6 +13,7 @@ export class RippleButtonComponent implements OnInit {
     console.log('changes made in first merge request');
     console.log('changes made in first merge request in another commit ');
     console.log('temp 3 ');
+    console.log('temp 3-2');
   }
 
 }
