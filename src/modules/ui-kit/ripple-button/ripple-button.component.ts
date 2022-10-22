@@ -11,7 +11,7 @@ export class RippleButtonComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('changes made in first merge request');
-    console.log('changes made in first merge request in another commit');
+    console.log('changes made in first merge request in another commit ');
   }
 
 }
