@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Host, OnInit, Optional, SkipSelf } from '@angular/core';
+import { ParentComponent } from '../../../app/parent/parent.component';
+import { ParentAboveComponent } from '../../../app/parent-above/parent-above.component';
 
 @Component({
   selector: 'app-ripple-button',
@@ -7,13 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RippleButtonComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    @Optional() public parentComponent: ParentComponent,
+    @Optional() public parentAbove: ParentAboveComponent,
+  ) {
+  }
 
   ngOnInit(): void {
-    console.log('changes made in first merge request');
-    console.log('changes made in first merge request in another commit ');
-    console.log('temp 3 ');
-    console.log('temp 3-2');
+
+  }
+
+  fuckiingClick() {
+
   }
 
 }
